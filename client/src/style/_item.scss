@@ -1,0 +1,23 @@
+.cabinet__list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-transform: capitalize;
+  font-family: 'Roboto';
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  button {
+    border: none;
+    background: white;
+    color: #ddd;
+    transition: all 0.3s ease;
+    &:hover {
+      transform: scale(1.2);
+      color: black;
+    }
+  }
+}

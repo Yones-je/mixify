@@ -1,0 +1,60 @@
+.showcase__container {
+  padding: 1rem;
+  width: 100%;
+}
+
+.drinklist {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 400px));
+  grid-auto-flow: row;
+  grid-gap: 1rem;
+  list-style: none;
+  .drinklist__card {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+    .card__image-container {
+      max-width: 100%;
+      max-height: 400px;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+      }
+    }
+    .card__text-container {
+      font-family: 'Poppins';
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem;
+      width: 100%;
+      text-align: center;
+      button {
+        font-family: 'Poppins';
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        border: 2px solid rgb(65, 65, 65);
+        padding: 0.5rem;
+        transition: all 0.3s ease;
+        &:hover {
+          background: rgb(65, 65, 65);
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.card__infotext {
+  font-family: 'Roboto';
+}
