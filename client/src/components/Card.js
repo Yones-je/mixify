@@ -46,10 +46,13 @@ const Card = ({ drink }) => {
               {ingredientList &&
                 ingredientList.map((ingredient, index) => (
                   <li className="card__listitem" key={index}>
-                    {`${measureList[index] !== undefined ? measureList[index] : ''} ${ingredient.trim()}`}
+                    {`${
+                      measureList[index] !== undefined ? measureList[index] : ''
+                    } ${ingredient.trim()}`}
                   </li>
                 ))}
             </ul>
+            <br />
             <p>{drinkInfo.strInstructions}</p>
           </div>
         ) : (

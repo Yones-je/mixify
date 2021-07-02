@@ -1,13 +1,5 @@
 import React from 'react';
 import Card from './Card';
-/* import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  Image,
-  ButtonBack,
-  ButtonNext,
-} from 'pure-react-carousel'; */
 
 const Showcase = ({ drinkList }) => {
   return (

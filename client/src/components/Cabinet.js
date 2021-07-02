@@ -3,7 +3,7 @@ import CabinetForm from './CabinetForm';
 import CabinetItem from './CabinetItem';
 import { getSuggestions, requestFormatter } from '../util';
 
-const Cabinet = ({ openCabinet, setDrinkList, setOpenCabinet }) => {
+const Cabinet = ({ openCabinet, setDrinkList, setOpenCabinet, setShow }) => {
   const [items, setItems] = useState([]);
   const [nonAlcoholic, setNonAlcoholic] = useState(false);
 
@@ -52,6 +52,7 @@ const Cabinet = ({ openCabinet, setDrinkList, setOpenCabinet }) => {
     }
     setNonAlcoholic(false);
     clearChecked();
+    setShow(false);
     setOpenCabinet(!openCabinet);
   };
 
@@ -70,15 +71,6 @@ const Cabinet = ({ openCabinet, setDrinkList, setOpenCabinet }) => {
         ))}
       </ul>
       <div className="cabinet__button-container">
-        <label>
-          Non Alcoholic
-          <input
-            type="checkbox"
-            onClick={() => setNonAlcoholic(!nonAlcoholic)}
-            checked={nonAlcoholic}
-            readOnly
-          />
-        </label>
         <button onClick={clickHandler}>Mixify!</button>
       </div>
     </aside>
