@@ -35,3 +35,13 @@ export const getDrink = async id => {
     console.log(err.response.body);
   }
 };
+
+export const getTrending = async () => {
+  try {
+    const response = await axios.get('/api/trending');
+    const data = await response.data;
+    return data;
+  } catch (err) {
+    console.log(err.response.body);
+  }
+};
